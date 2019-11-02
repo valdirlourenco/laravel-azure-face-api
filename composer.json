@@ -1,0 +1,17 @@
+{
+    "name": "smartdog23/laravel-azure-face-api",
+    "description": "Laravel Azure Face API",
+    "type": "library",
+    "require": {
+        "php": "5.5",
+        "smartdog23/php-azure-face-api": "^0.1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valdir Lourenco",
+            "email": "contact@valdir.dev"
+        }
+    ],
+    "minimum-stability": "dev"
+}
