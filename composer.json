@@ -1,7 +1,16 @@
 {
     "name": "smartdog23/laravel-azure-face-api",
-    "description": "Laravel Azure Face API",
+    "description": "SmartDog23 - Laravel PHP Azure FaceAPI - Facial Recognition Software - Laravel Package",
     "type": "library",
+    "keywords": [
+        "azure",
+        "face api",
+        "facial",
+        "recognition",
+        "detection",
+        "laravel"
+    ],
+    "homepage": "https://github.com/smartdog23/laravel-azure-face-api",
     "require": {
         "php": "5.5",
         "smartdog23/php-azure-face-api": "^0.1.1"
@@ -10,8 +19,24 @@
     "authors": [
         {
             "name": "Valdir Lourenco",
-            "email": "contact@valdir.dev"
+            "email": "contact@valdir.dev",
+            "homepage": "https://valdir.dev"
         }
     ],
-    "minimum-stability": "dev"
+    "autoload": {
+        "psr-4": {
+            "SmartDog23\\LaravelAzureFaceApi\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmartDog23\\LaravelAzureFaceApi\\Providers\\AzureFaceApiServiceProvider"
+            ],
+            "aliases": {
+                "AzureFaceApi": "SmartDog23\\LaravelAzureFaceApi\\Facade"
+            }
+        }
+    }
 }
