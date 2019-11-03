@@ -6,6 +6,7 @@ namespace SmartDog23\LaravelAzureFaceApi\Providers;
  */
 use Illuminate\Support\ServiceProvider;
 use SmartDog23\LaravelAzureFaceApi\Facades\LaravelAzureFaceApi;
+use Illuminate\Contracts\Support\DeferrableProvider;
 
 class LaravelAzureFaceApiServiceProvider extends ServiceProvider implements DeferrableProvider
 {
