@@ -3,10 +3,10 @@ return [
     /*
      * The API Key
      */
-    'key' => config('azure-face-api.key', ''),
+    'key' => env('AZURE_FACE_API_KEY', ''),
 
     /*
      * The API region - default (eastus)
      */
-    'region' => config('azure-face-api.region', 'eastus')
+    'region' => config('AZURE_FACE_API_REGION', 'eastus')
 ];
