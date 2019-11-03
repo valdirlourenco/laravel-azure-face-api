@@ -4,18 +4,12 @@ namespace SmartDog23\LaravelAzureFaceApi\Providers;
  * Class LaravelAzureFaceApiServiceProvider
  * @package SmartDog23\LaravelAzureFaceApi
  */
-use Illuminate\Support\ServiceProvider;
 use SmartDog23\LaravelAzureFaceApi\Facades\LaravelAzureFaceApi;
+use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
 class LaravelAzureFaceApiServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
     /**
      * Bootstrap the application events.
      *
@@ -35,7 +29,7 @@ class LaravelAzureFaceApiServiceProvider extends ServiceProvider implements Defe
      */
     public function register()
     {
-        $this->registerAzureFaceApi();
+        $this->registerLaravelAzureFaceApi();
         $this->mergeConfig();
     }
     /**
@@ -43,7 +37,7 @@ class LaravelAzureFaceApiServiceProvider extends ServiceProvider implements Defe
      *
      * @return void
      */
-    private function registerAzureFaceApi()
+    private function registerLaravelAzureFaceApi()
     {
         $this->app->singleton(LaravelAzureFaceApi::class, function ($app) {
             return new LaravelAzureFaceApi(config('azure-face-api.key'), config('azure-face-api.region'));
