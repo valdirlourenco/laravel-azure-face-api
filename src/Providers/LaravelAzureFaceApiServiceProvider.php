@@ -1,7 +1,7 @@
 <?php
 namespace SmartDog23\LaravelAzureFaceApi\Providers;
 /*
- * Class AzureFaceApiServiceProvider
+ * Class LaravelAzureFaceApiServiceProvider
  * @package SmartDog23\LaravelAzureFaceApi
  */
 use Illuminate\Support\ServiceProvider;
