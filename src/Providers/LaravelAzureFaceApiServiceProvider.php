@@ -19,7 +19,7 @@ class LaravelAzureFaceApiServiceProvider extends ServiceProvider implements Defe
     {
         // Publish config files
         $this->publishes([
-            __DIR__.'/../../config/config.php' => config_path('azure-face-api.php'),
+            __DIR__.'/../../config/azure-face-api.php' => config_path('azure-face-api.php'),
         ]);
     }
     /**
