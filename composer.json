@@ -32,10 +32,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SmartDog23\\LaravelAzureFaceApi\\Providers\\AzureFaceApiServiceProvider"
+                "SmartDog23\\LaravelAzureFaceApi\\Providers\\LaravelAzureFaceApiServiceProvider"
             ],
             "aliases": {
-                "AzureFaceApi": "SmartDog23\\LaravelAzureFaceApi\\Facade"
+                "AzureFaceApi": "SmartDog23\\LaravelAzureFaceApi\\Facades"
             }
         }
     }
