@@ -2,6 +2,7 @@
 namespace SmartDog23\LaravelAzureFaceApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use SmartDog23\AzureFaceApi\AzureFaceApi;
 
 class LaravelAzureFaceApi extends Facade
 {
@@ -12,6 +13,6 @@ class LaravelAzureFaceApi extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'LaravelAzureFaceApi';
+        return AzureFaceApi::class;
     }
 }
