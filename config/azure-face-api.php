@@ -8,5 +8,5 @@ return [
     /*
      * The API region - default (eastus)
      */
-    'region' => config('AZURE_FACE_API_REGION', 'eastus')
+    'region' => env('AZURE_FACE_API_REGION', 'eastus')
 ];
