@@ -18,7 +18,6 @@ class LaravelAzureFaceApiServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerLaravelAzureFaceApi();
         // Publish config files
         $this->publishes([
             __DIR__.'/../../config/azure-face-api.php' => config_path('azure-face-api.php'),
@@ -31,7 +30,7 @@ class LaravelAzureFaceApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-//        $this->registerLaravelAzureFaceApi();
+        $this->registerLaravelAzureFaceApi();
         $this->mergeConfig();
     }
     /**
