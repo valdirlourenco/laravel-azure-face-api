@@ -1,8 +1,10 @@
 SmartDog23 - Laravel Azure Face API
 ===================================
 
-[![Latest Version](https://img.shields.io/github/release/smartdog23/laravel-azure-face-api.svg?style=flat-square)](https://github.com/smartdog23/laravel-azure-face-api/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/smartdog23/laravel-azure-face-api.svg?style=flat-square)](https://packagist.org/packages/smartdog23/laravel-azure-face-api)
+[![License](https://poser.pugx.org/smartdog23/laravel-azure-face-api/license)](https://packagist.org/packages/smartdog23/laravel-azure-face-api)
+[![Latest Stable Version](https://poser.pugx.org/smartdog23/laravel-azure-face-api/v/stable)](https://packagist.org/packages/smartdog23/laravel-azure-face-api)
+[![Total Downloads](https://poser.pugx.org/smartdog23/laravel-azure-face-api/downloads)](https://packagist.org/packages/smartdog23/laravel-azure-face-api)
+
 
 Laravel Azure Face API is a PHP Client that make easy to use Azure's Face Recognition API
 
@@ -36,12 +38,15 @@ php artisan vendor:publish --provider="SmartDog23\LaravelAzureFaceApi\Providers\
 
 ## Usage
 
+
 Using the simple mode
 
 ```php
 $result = LaravelAzureFaceApi::largePersonGroup()->create()->execute('test-group', 'description of the group');
 echo $result->getBody()->getContents();
 ```
+
+
 
 Using the advanced mode
 
