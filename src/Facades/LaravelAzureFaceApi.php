@@ -9,7 +9,7 @@ class LaravelAzureFaceApi extends Facade
     /**
      * Get the registered name of the component.
      *
-     * @return string
+     * @return SmartDog23\AzureFaceApi\AzureFaceApi
      */
     protected static function getFacadeAccessor()
     {

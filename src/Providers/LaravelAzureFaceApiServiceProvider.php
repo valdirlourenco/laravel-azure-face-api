@@ -6,7 +6,6 @@ namespace SmartDog23\LaravelAzureFaceApi\Providers;
  */
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Support\DeferrableProvider;
 use SmartDog23\AzureFaceApi\AzureFaceApi;
 
 class LaravelAzureFaceApiServiceProvider extends ServiceProvider
@@ -59,8 +58,6 @@ class LaravelAzureFaceApiServiceProvider extends ServiceProvider
 
     /**
      * Get the services provided by the provider.
-     *
-     * @return array
      */
     public function provides()
     {
