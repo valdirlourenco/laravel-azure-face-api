@@ -8,9 +8,8 @@ SmartDog23 - Laravel Azure Face API
 
 Laravel Azure Face API is a PHP Client that make easy to use Azure's Face Recognition API
 
-(this is a Facade for the PHP Azure Face API library)
+(this is a Laravel Facade based on [PHP Azure Face API](https://github.com/smartdog23/php-azure-face-api) library)
 
-[PHP Azure Face API](https://github.com/smartdog23/php-azure-face-api)
 
 ```php
 
