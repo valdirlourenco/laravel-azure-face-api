@@ -12,8 +12,8 @@
     ],
     "homepage": "https://github.com/smartdog23/laravel-azure-face-api",
     "require": {
-        "php": ">=5.5",
-        "smartdog23/php-azure-face-api": "^0.1.1"
+        "php": ">=7.0",
+        "smartdog23/php-azure-face-api": "^0.2.0"
     },
     "license": "MIT",
     "authors": [
