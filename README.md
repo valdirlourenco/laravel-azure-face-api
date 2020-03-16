@@ -21,7 +21,7 @@ echo $result->getBody()->getContents();
 
 ## Help and docs
 
-Soon
+[Sample Laravel Project](https://github.com/smartdog23/laravel-azure-face-api-sample)
 
 
 ## Installation
